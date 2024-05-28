@@ -1,0 +1,49 @@
+.ecriture {
+    font-size: medium;
+    position: relative;
+    width: 100%;
+}
+
+.premier {
+    text-align: center;
+    animation: premier 4s ease forwards ;
+}
+
+@keyframes premier
+{
+    0% {
+        opacity: 1;
+        transform: translateX(-50px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
+
+/* Acces refuser */
+
+.acces_refuser_title {
+    color: #ff6347;
+}
+
+.p_acces_refuser {
+    color: #555;
+    font-size: 18px;
+}
+
+.icon_acces_refuser {
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+
+.icon_acces_refuser::before {
+    content: "\1F6AB";
+    display: block;
+    transform: scale(2);
+}
+
